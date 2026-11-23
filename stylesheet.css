@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1em;
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .menu-knop {
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .zoek-knop img,
+    .menu-knop img {
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+@media (min-width: 60em) {
+
+    .menu-knop,
+    .sluit-knop {
+        display: none;
+    }
+
+    .hoofdmenu {
+        display: flex;
+        position: static;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+    }
+}

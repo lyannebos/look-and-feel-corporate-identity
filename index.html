@@ -20,7 +20,19 @@
       <img src="assets/logo.svg" alt="Home" width="75" height="75">
     </a>
 
-    <nav class="hoofdmenu">
+    <a href="#zoeken" class="zoek-knop">
+      <img src="assets/zoeken.svg" alt="Zoeken">
+    </a>
+
+    <button type="button" popovertarget="hoofdmenu" class="menu-knop">
+      <img src="assets/hamburger.svg" alt="Menu">
+    </button>
+
+    <nav id="hoofdmenu" class="hoofdmenu" popover>
+      <button type="button" popovertarget="hoofdmenu" popovertargetaction="hide" class="sluit-knop">
+        <img src="assets/kruisje.svg" alt="Menu sluiten">
+      </button>
+
       <ul>
         <li><a href="#">Oefenen</a></li>
         <li><a href="#">Verdiepen</a></li>
@@ -30,23 +42,8 @@
       </ul>
     </nav>
 
-    <button type="button" class="zoek-button">
-      <img src="assets/zoeken.svg" alt="Zoeken">
-    </button>
-
-    <a href="#" class="account">
-      <img src="assets/account.svg" alt="Account">
-    </a>
-
-    <a href="#" class="favorieten">
-      <img src="assets/hartje.svg" alt="Favorieten">
-    </a>
-
-    <a href="#" class="materiaal">Materiaal indienen</a>
-
-    <button type="button" class="menu-button">
-      <img src="assets/hamburger.svg" alt="Menu">
-    </button>
+      <a href="#" class="materiaal">Materiaal indienen</a>
+    </nav>
   </header>
 
   <main>
