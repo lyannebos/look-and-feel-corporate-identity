@@ -108,12 +108,145 @@ header {
     cursor: pointer;
 }
 
-    .zoek-knop img,
-    .menu-knop img {
-        display: block;
-        width: 1.5em;
-        height: 1.5em;
-    }
+.mainmenu ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 2em;
+    justify-items: center;
+}
+
+.mainmenu a {
+    color: var(--donkerblauw);
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+.material-mobile a {
+    display: inline-block;
+    padding: .75em 1.5em;
+    background-color: var(--geel);
+}
+
+.breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+    align-items: end;
+    color: var(--grijs);
+}
+
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 0.25rem;
+    content: ">";
+}
+
+.breadcrumb .active {
+    font-weight: 700;
+    color: var(--donkerblauw);
+}
+
+
+
+.zoekrij {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.zoekbalk {
+    flex: 1;
+}
+
+.zoekbalk label {
+    display: block;
+}
+
+.zoekbalk span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.zoekbalk input {
+    width: 100%;
+    padding: .75em 1em .75em 3em;
+    border: 1.5px solid var(--lichtgrijs);
+    appearance: none;
+    background-color: white;
+    background-image: url(assets/zoeken-grijs.svg);
+    background-repeat: no-repeat;
+    background-position: 1em center;
+    background-size: 1.25em;
+    color: var(--donkerblauw);
+}
+
+
+.filter-knop {
+    flex-shrink: 0;
+    width: 3.5em;
+    height: 3.5em;
+    padding: 0;
+    border: none;
+    border-radius: 100px;
+    background: none;
+    cursor: pointer;
+}
+
+.filter-knop img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Filterpaneel */
+
+.filters {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    background-color: var(--achtergrond);
+}
+
+.filters ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: .5em;
+}
+
+.filters ul button {
+    display: flex;
+    align-items: center;
+    gap: .75em;
+    width: 100%;
+    padding: .5em;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 1em;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* plekhouders tot de iconen er zijn */
+.filters ul button span {
+    flex-shrink: 0;
+    width: 3em;
+    height: 3em;
+    border-radius: 100px;
 }
 
 @media (min-width: 60em) {
