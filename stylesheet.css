@@ -94,16 +94,19 @@ header {
     background-color: var(--achtergrond);
 }
 
-    .logo {
-        margin-right: auto;
-    }
+.mainmenu:popover-open {
+    display: flex;
+    flex-direction: column;
+}
 
-    .menu-knop {
-        padding: 0;
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
+.close-button {
+    width: 2.5em;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
 
     .zoek-knop img,
     .menu-knop img {
