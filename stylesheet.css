@@ -38,7 +38,61 @@ header {
     display: flex;
     align-items: center;
     gap: 1.5em;
+    padding: 1.5em 1em;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: var(--achtergrond);
+    border-bottom: 1px solid var(--lichtgrijs);
+     
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    display: block;
+    width: 3.5em;
+    height: auto;
+}
+
+.menu-button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.search-button img,
+.account img,
+.favorites img {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.menu-button img {
+    display: block;
+    width: 2em;
+    height: 2em;
+}
+
+.account,
+.favorites,
+.material {
+    display: none;
+}
+
+.mainmenu {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     padding: 1em;
+    border: none;
+    background-color: var(--achtergrond);
+}
 
     .logo {
         margin-right: auto;
