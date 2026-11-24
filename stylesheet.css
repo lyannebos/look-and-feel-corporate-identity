@@ -99,6 +99,7 @@ header {
 }
 
 .close-button {
+    display: block;
     width: 2.5em;
     margin-left: auto;
     padding: 0;
