@@ -206,7 +206,6 @@ header {
     height: 100%;
 }
 
-/* Filterpaneel */
 
 .filters {
     inset: 0;
@@ -241,12 +240,11 @@ header {
     cursor: pointer;
 }
 
-/* plekhouders tot de iconen er zijn */
-.filters ul button span {
+
+.filters ul button img {
     flex-shrink: 0;
     width: 3em;
     height: 3em;
-    border-radius: 100px;
 }
 
 @media (min-width: 60em) {
