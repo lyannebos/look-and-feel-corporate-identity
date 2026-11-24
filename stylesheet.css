@@ -251,18 +251,51 @@ header {
 
 @media (min-width: 60em) {
 
-    .menu-knop,
-    .sluit-knop {
+
+    .menu-button,
+    .close-button,
+    .material-mobile {
         display: none;
     }
 
-    .hoofdmenu {
+    .account,
+    .favorites {
+        display: block;
+    }
+
+    .material {
+        display: inline-block;
+        padding: .75em 1.5em;
+        background-color: var(--geel);
+        color: var(--donkerblauw);
+        text-decoration: none;
+        font-family: var(--font-titels);
+        font-weight: 700;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .mainmenu {
         display: flex;
+        flex-direction: row;
         position: static;
         width: auto;
+        height: auto;
         margin: 0;
+        margin-right: auto;
         padding: 0;
         border: none;
         background: none;
+    }
+
+    .mainmenu ul {
+        display: flex;
+        align-items: center;
+        gap: 2.5em;
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
 }
