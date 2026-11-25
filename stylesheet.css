@@ -9,22 +9,10 @@ img {
     height: auto;
 }
 
-:root {
-    --donkerblauw: #1D194E;
-    --blauwgrijs: #47446F;
-    --grijs: #A3A2B7;
-    --lichtgrijs: #D1D0DB;
-    --achtergrond: #F3F3F6;
-    --geel: #FEB51E;
-    --donkergeel: #D18B0A;
-    --teal-licht: #A7DDDF;
-    --teal: #4FBBC2;
-    --teal-donker: #019DA7;
-}
-
 body {
     margin: 0;
-    background-color: var(--achtergrond);
+    background-color: var(--color-neutral-light);
+
 }
 
 main {
@@ -41,8 +29,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 20;
-    background-color: var(--achtergrond);
-    border-bottom: 1px solid var(--lichtgrijs);
+    background-color: var(--color-neutral-light);
+    border-bottom: 1px solid var(--color-neutral-normal);
 
 }
 
@@ -90,7 +78,7 @@ header {
     margin: 0;
     padding: 1em;
     border: none;
-    background-color: var(--achtergrond);
+    background-color: var(--color-neutral-light);
 }
 
 .mainmenu:popover-open {
@@ -118,7 +106,7 @@ header {
 }
 
 .mainmenu a {
-    color: var(--donkerblauw);
+    color: var(--dark-accent);
     text-decoration: none;
     font-size: 1.25em;
 }
@@ -126,7 +114,7 @@ header {
 .material-mobile a {
     display: inline-block;
     padding: .75em 1.5em;
-    background-color: var(--geel);
+    background-color: var(--color-interactive-light);
 }
 
 .breadcrumb ol {
@@ -136,18 +124,19 @@ header {
     margin: 2rem 0;
     padding: 0;
     align-items: end;
-    color: var(--grijs);
+    color: var(--dark-accent);
 }
 
 .breadcrumb li:not(:last-child)::after {
     display: inline-block;
     margin: 0 0.25rem;
     content: ">";
+    color:var(--dark-accent);
 }
 
 .breadcrumb .active {
     font-weight: 700;
-    color: var(--donkerblauw);
+    color: var(--dark-accent);
 }
 
 
@@ -178,7 +167,7 @@ header {
 .zoekbalk input {
     width: 100%;
     padding: .75em 1em .75em 3em;
-    border: 1.5px solid var(--lichtgrijs);
+    border: 1.5px solid var(--color-neutral-normal);
     appearance: none;
     background-color: white;
     background-image: url(assets/zoeken-grijs.svg);
@@ -214,7 +203,7 @@ header {
     margin: 0;
     padding: 1em;
     border: none;
-    background-color: var(--achtergrond);
+    background-color: var(--color-neutral-light);
 }
 
 .filters ul {
@@ -263,8 +252,8 @@ header {
     .material {
         display: inline-block;
         padding: .75em 1.5em;
-        background-color: var(--geel);
-        color: var(--donkerblauw);
+        background-color: var(--color-interactive-light);
+        color: var(--dark-accent);
         text-decoration: none;
         font-family: var(--font-titels);
         font-weight: 700;
